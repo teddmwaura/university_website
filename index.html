@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>University Website</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;1,100&display=swap" rel="stylesheet">
+  <script src="https://www.flaticon.com/edge/redirect?url=aHR0cHM6Ly9hZG9iZS5wcmYuaG4vY2xpY2svY2FtcmVmOjEwMTFscmNLSy9jcmVhdGl2ZXJlZjoxMDExbDkwNzE3L3B1YnJlZjpHQTEuMi4zMDgzNDQxMTQuMTY4MzgzNzU3Mi9kZXN0aW5hdGlvbjpodHRwcyUzQSUyRiUyRnN0b2NrLmFkb2JlLmNvbSUyRmltYWdlcyUyRmlkJTJGMTk1OTk4Nzk4JTNGayUzRHNoaWVsZCUyNTIwaWNvbg==" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+</head>
+<body>
+
+  <!--section 1-->
+
+  <section id="section1">
+      <div class="header">
+        <div class="header-left">
+          <img src="https://cdn-icons-png.flaticon.com/128/42/42972.png" alt="">
+          <p>Mount Kenya University</p>
+        </div>
+       <div class="header-right">
+        <nav id="nav">
+          <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contacts</a></li>
+                <li><a href="enroll.html">Enroll</a></li>
+          </ul>
+          <div id="close">
+            <img src="https://cdn-icons-png.flaticon.com/128/10091/10091183.png" id="closing">
+          </div>
+        </nav>
+       </div>
+       <div id="hello">
+        <img src="https://cdn-icons-png.flaticon.com/128/2613/2613045.png" id="logo">
+      </div>
+
+     
+      </div>
+
+      <div class="container">
+        <h1>
+          World's Biggest University
+        </h1>
+        <p>
+          Making a Website is the most Easiest thing in your
+          Life you just need basics of<br> Html, css and JavaScript be passionate 
+          and your good to go.
+        </p>
+
+        <a href="about.html"><span></span>Visit Us to Know More</a>
+        
+      </div>
+  </section>
+
+   <!--section 2-->
+
+  <section id="section2">
+    <div class="div-top">
+      <h1>Courses We Offer</h1>
+      <p>Meet with Us, Choose your Course, Make a good Choice</p>
+    </div>
+
+    <div class="div-bottom">
+      <div class="div-bottom3">
+        <h2>
+          Certificate
+        </h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto alias aperiam optio, ratione tenetur impedit nostrum nulla
+        </p>
+      </div>
+      <div class="div-bottom3">
+        <h2>
+          Degree
+        </h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto alias aperiam optio, ratione tenetur impedit nostrum nulla
+        </p>
+      </div>
+      <div class="div-bottom3">
+        <h2>
+          Masters
+        </h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto alias aperiam optio, ratione tenetur impedit nostrum nulla
+        </p>
+      </div>
+      <div class="div-bottom3">
+        <h2>
+          PHD
+        </h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto alias aperiam optio, ratione tenetur impedit nostrum nulla
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!--section 3-->
+
+  <section id="section3">
+    <div class="div-top">
+      <h1>Our CountryWide Campuses</h1>
+      <p>Find Us, in your County, Make us you Choice</p>
+    </div>
+
+    <div class="div-hero">
+
+      <div class="hero">
+        <img src="" alt="">
+        <div class="overlay">
+          <h1>Nairobi</h1>
+          <hr>
+          <p>We are now here in Nairobi, Come Visit Us Now!</p>
+        </div> 
+        </div>
+      
+
+      <div class="hero">
+        <img src="" alt="">
+        <div class="overlay">
+          <h1>Mombasa</h1>
+          <hr>
+          <p>We are now here in Mombasa, Come Visit Us Now!</p>
+        </div> 
+      </div>
+
+      <div class="hero">
+        <img src="" alt="">
+        <div class="overlay">
+          <h1>Kiambu</h1>
+          <hr>
+          <p>We are now here in Kiambu, Come Visit Us Now!</p>
+      </div> 
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+ <!--section 4-->
+
+ <!---javascript Code-->
+
+ <script>
+  const nav = document.getElementById('nav');
+
+  const logo = document.getElementById('logo');
+
+  const closing = document.getElementById('closing');
+
+  if(logo)
+  {
+    logo.addEventListener('click', () =>{
+      nav.classList.add('active');
+    });
+  }
+
+  if(closing)
+  {
+    closing.addEventListener('click', () =>{
+      nav.classList.remove('active');
+    });
+  }
+ </script>
+</body>
+</html>

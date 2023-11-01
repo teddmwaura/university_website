@@ -1,0 +1,389 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'poppins', sans-serif;
+}
+
+/* section 1 of the website */
+#section1{
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(rgba(0,0,0,0.2), #333), url(https://hips.hearstapps.com/toc.h-cdn.co/assets/16/36/3200x3200/square-1473185527-rice-university.jpg?resize=1200:*);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header{
+  height: 10vh;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.4);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #615f5f;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background: linear-gradient(rgba(0,0,0,0.1), #333);
+}
+.header-left{
+  padding: 0 0 0 3rem;
+  display: flex;
+  justify-content: center;
+}
+.header-left p{
+  font-size: 25px;
+  font-family: vladimir script;
+  letter-spacing: 1px;
+  color: #fff;
+  
+}
+.header-left img{
+  height: 40px;
+  margin-right: 3rem;
+}
+.header-right{
+  padding: 0 5rem 0 0;
+}
+.header-right nav ul{
+  list-style: none;
+  display: flex;
+}
+.header-right nav ul li a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  letter-spacing: 1px;
+  margin-left: 2rem;
+}
+.header-right nav ul li{
+  position: relative;
+}
+.header-right nav ul li::after{
+  content: "";
+  width: 0;
+  background-color: #fff;
+  position: absolute;
+  bottom: -10px;
+  height: 3px;
+  left: 2.2rem;
+  transition: 0.5s ease;
+}
+.header-right nav ul li:hover::after{
+  width: 50%;
+
+}
+.container{
+  padding-top: 16rem;
+  text-align: center;
+}
+.container h1{
+  font-size: 60px;
+  color: white;
+  letter-spacing: 1px;
+  margin-bottom: 2rem;
+  font-family: roboto;
+}
+.container p{
+  font-size: 18px;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+  font-style: italic;
+  color: white;
+  margin-bottom: 4rem;
+
+}
+.container a{
+  padding: 12px 4rem;
+  border: 1px solid #fff;
+  font-size: 18px;
+  font-family: roboto;
+  background: none;
+  cursor: pointer;
+  color: #fff;
+  position: relative;
+  text-decoration: none;
+  z-index: 1;
+  transition: 1s;
+}
+.container a span{
+  position: absolute;
+  background: linear-gradient(rgba(0,0,0,0.4), #333);
+  top: 0;
+  width: 0;
+  left: 0;
+  height: 100%;
+  transition: 1s ease;
+  z-index: -1;
+}
+.container a:hover span{
+  width: 100%;
+}
+.container a:hover{
+color: #fff;
+}
+#hello img{
+  height: 30px;
+}
+#hello{
+  display: none;
+}
+#close img{
+  height: 30px;
+}
+#close{
+  display: none;
+}
+
+
+
+/* section 2 of the website */
+
+#section2{
+  height: 70vh;
+  background-color: white;
+  text-align: center;
+  padding: 3rem 0 0 0;
+}
+.div-top{
+  margin-bottom: 4rem;
+}
+.div-top p{
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-style: italic;
+  margin-top: 1rem;
+}
+.div-top h1{
+  letter-spacing: 1px;
+}
+.div-bottom{
+  display: grid;
+  padding: 0 3rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 2rem;
+}
+.div-bottom3{
+box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+border-radius: 10px;
+background-color: rgb(241, 241, 233);
+cursor: pointer;
+transition: 0.5s ease;
+height: 33vh;
+}
+.div-bottom3:hover{
+  box-shadow: 0 10px 15px rgba(0,0,0,0.3); 
+}
+.div-bottom3 h2{
+  letter-spacing: 1px;
+  margin-bottom: 1.5rem;
+  margin-top: 1rem;
+}
+.div-bottom3 p{
+  font-size: 17px;
+  letter-spacing: 1px;
+  font-style: italic;
+  margin-top: 1rem;
+}
+
+/* section 3 of the website */
+
+#section3{
+  height: 110vh;
+  background-color: #efefef;
+  text-align: center;
+  padding: 4em 4rem 0 4rem;
+}
+.hero{
+  height: 70vh;
+  box-shadow: 0 10px 15px rgba(0,0,0,0.3);
+  border-radius: 10px;
+  background: linear-gradient(rgba(0,0,0,0.3), #333), url(https://c1.wallpaperflare.com/preview/314/863/768/the-university-of-toronto-university-of-toronto-u-of-t-campus.jpg);
+  cursor: pointer;
+  transition: 0.5s ease;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+
+}
+.hero:nth-child(2){
+  height: 70vh;
+  background: linear-gradient(rgba(0,0,0,0.3), #333), url(https://wallpapercave.com/wp/wp2468672.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; 
+
+}
+.hero:nth-child(3){
+  height: 70vh;
+  background: linear-gradient(rgba(0,0,0,0.3), #333), url(https://wallpaperaccess.com/full/1209573.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.div-hero{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 1rem;
+}
+.overlay{
+  position: absolute;
+  bottom: -2%;
+  width: 100%;
+  transition: 1s ease;
+  height: 50vh;
+  opacity: 0;
+  transition: 1s;
+  border-radius: 10px;
+}
+.overlay:hover{
+  opacity: 1;
+  bottom: 10%;
+}
+.overlay h1{
+  letter-spacing: 1px;
+  color: white;
+  margin-bottom: 1rem;
+}
+.overlay p{
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-style: italic;
+  color: white;
+}
+
+/* responsive phone screen */
+
+@media screen and (max-width: 770px)
+{
+  /* section 2 of the website */
+
+  .div-bottom{
+    display: grid;
+    grid-template-columns: 1fr;
+  
+  }
+  .div-bottom3 p{
+    font-size: 18px;
+    font-style: italic;
+    margin-top: 0.5rem;
+  }
+  .div-bottom3 h2{
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    font-size: 25px;
+
+  }
+  .div-bottom3{
+    height: auto;
+    margin-bottom: 2rem;
+  }
+  #section2{
+    height: auto;
+    padding: 3rem 0 0 0;
+  }
+  .div-top{
+    margin-bottom: 2rem;
+  }
+
+  /* section 1 of the website */
+
+  .header-left{
+    padding: 0 0 0 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .header-left p{
+    font-size: 16px;
+    white-space: no-wrap;
+  }
+  .header-left img{
+    height: 30px;
+    margin-right: 1rem;
+  }
+  .header-right nav ul li a{
+    font-size: 16px;
+    margin: 0 0 0 0.5rem;
+    color: #333;
+
+  } 
+  .header nav ul li{
+    margin-bottom: 3rem;
+  }
+   .header-right nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+  }
+  .header-right{
+    padding: 0;
+  }
+  .header nav{
+    position: fixed;
+    top: 0;
+    right: -250px;
+    bottom: 0;
+    width: 30%;
+    background-color: #fff;
+    transition: 1s ease;
+  }
+  .container{
+    padding-top: 8rem;
+    padding-bottom: 2rem;
+  }
+  .container h1{
+    font-size: 50px;
+    margin-bottom: 2rem;
+  }
+  .container p{
+    font-size: 16px;
+  }
+  #hello{
+    display: initial;
+    margin-right: 10px;
+  }
+  #nav.active{
+    right: 0;
+  }
+  #close{
+  display: initial;
+  z-index: 10;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+
+  }
+  #close img{
+    z-index: 10;
+  }
+  #section1{
+    height: auto;
+ 
+  }
+
+
+   /* section 3 of the website */
+
+   #section3{
+    height: auto;
+    background-color: #efefef;
+    text-align: center;
+    padding: 4em 0 0 0;
+  }
+  .div-hero{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+  .hero{
+    margin-bottom: 2rem;
+  }
+
+}
